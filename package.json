@@ -1,0 +1,45 @@
+{
+  "name": "text-editor--poc",
+  "version": "1.0.0",
+  "description": "Packing froala editor into container & injecting html elements and properties in code mode and view mode.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZakAms/Text-editor--POC.git"
+  },
+  "author": "Zak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZakAms/Text-editor--POC/issues"
+  },
+  "homepage": "https://github.com/ZakAms/Text-editor--POC#readme",
+  "devDependencies": {
+    "ajv": "^5.2.2",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-latest": "^6.24.1",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.28.4",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.30.1",
+    "json-loader": "^0.5.7",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.5",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.4.1",
+    "webpack-dev-server": "^2.6.1"
+  },
+  "dependencies": {
+    "codemirror": "5.3.0",
+    "font-awesome": "^4.7.0",
+    "froala-editor": "^2.6.6",
+    "jquery": "^3.2.1"
+  }
+}
