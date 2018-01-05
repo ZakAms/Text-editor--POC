@@ -1,0 +1,21 @@
+[{
+        "name": "First Name",
+        "type": "text"
+    },
+    {
+        "name": "Last Name",
+        "type": "text"
+    },
+    {
+        "name": "School Image",
+        "type": "image"
+    },
+    {
+        "name": "IsGoldMember",
+        "type": "show"
+    },
+    {
+        "name": "School Name",
+        "type": "text"
+    }
+]

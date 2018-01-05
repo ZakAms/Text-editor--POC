@@ -1,0 +1,70 @@
+@import 'SideBar';
+@import 'toolbox';
+
+.fr-view {
+
+    [xmp-show] {
+       position: relative;
+
+       &:before {
+            content: "\F06E";
+            position: absolute;
+            top: -8px;
+            right: 0px;
+            width: 32px;
+            font: normal normal normal 18px/1 FontAwesome;
+       }
+    }
+
+    img[xmp-image-asset] {
+        min-width:100px;
+        min-height:100px;
+        display: inline-block;
+        background: #e7e7e7;
+        border:1px solid #4baccf;
+        background: white url('../images/image.png') no-repeat center center ;
+
+        // &::before {
+        //     content: ' ';
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     height: 100%;
+        //     width:100%;
+        //     z-index: 2;
+        //     text-align: center;
+        // }
+
+        // &::after {
+        //     content: "{{" attr(xmp-image-asset) "}}";
+        //     font-size: 12px;
+        //     bottom: 0;
+        //     left: 0;
+        //     width: 100%;
+        //     position: absolute;
+        //     white-space: nowrap;
+        //     text-align: center;
+        //     z-index: 3;
+        // }
+
+    }
+
+    .ic{
+        position: relative;
+        &::after {
+            content: attr(title);
+            font-size: 12px;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            position: absolute;
+            white-space: nowrap;
+            text-align: center;
+            z-index: 3;
+        }
+    }
+    .drag-over{
+         border: 1px double aqua ;
+    } 
+}
+

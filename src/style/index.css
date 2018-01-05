@@ -1,0 +1,302 @@
+.xmp-container {
+  width: 100%;
+  height: 85%;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+  /*  templates  */
+}
+.xmp-container .side {
+  width: 20%;
+  margin: 5px;
+  height: 100%;
+  font-family: "Arial";
+}
+.xmp-container .editor {
+  width: 80%;
+  margin: 5px;
+}
+.xmp-container .parent {
+  display: flex;
+  flex-wrap: wrap;
+}
+.xmp-container .block {
+  margin: 5px;
+}
+.xmp-container .ador {
+  background-color: #fff;
+  cursor: pointer;
+  color: #444;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  position: relative;
+}
+.xmp-container .ador img {
+  position: absolute;
+  width: 230px;
+  height: 50px;
+  top: 0;
+  left: 0;
+}
+.xmp-container .ador i {
+  position: absolute;
+  left: 0;
+}
+.xmp-container .ador.active,
+.xmp-container .ador:hover {
+  background-color: #e8f2f5;
+}
+.xmp-container button.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+.xmp-container button.accordion:hover {
+  background-color: lightblue;
+}
+.xmp-container button.accordion.active {
+  background-color: lightblue;
+}
+.xmp-container button.accordion.active:after {
+  content: "\2212";
+}
+.xmp-container button.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.xmp-container .panel {
+  padding: 0 18px;
+  background-color: white;
+  overflow: hidden;
+  transition: height 0.2s ease-out;
+  height: 0;
+  display: flex;
+}
+.xmp-container .adors-panel {
+  display: block;
+}
+.xmp-container .active + .panel {
+  height: calc(100% - 80px);
+}
+.xmp-container .acctitle {
+  background-color: white;
+  color: #444;
+  padding: 18px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 15px;
+  border: 1px solid #e7e7e7;
+}
+.xmp-container .fr-view table.towcol,
+.xmp-container .fr-view table.treecol {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 10px 10px;
+}
+.xmp-container .fr-view table.towcol td,
+.xmp-container .fr-view table.treecol td {
+  border-width: 2px;
+  border-style: dotted;
+}
+.floating-toolbox-container {
+  transition: width 0.25s ease;
+  flex: 1;
+  margin: 25px 10px 10px 0px;
+  display: flex;
+  flex-direction: column;
+}
+.floating-toolbox-container .floating-toolbox-header {
+  height: 41px;
+  overflow: hidden;
+  position: relative;
+}
+.floating-toolbox-container .floating-toolbox-header .title {
+  line-height: 36px;
+  font-family: Verdana;
+  font-size: 13px;
+}
+.floating-toolbox-container .floating-toolbox-header .toolbox-toggle {
+  font-size: 19px;
+  cursor: pointer;
+  line-height: 36px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  padding: 0px 5px;
+  background-color: #3d3c3d;
+}
+.floating-toolbox-container.closed {
+  width: 25px !important;
+}
+.floating-toolbox-container.closed .floating-toolbox-header {
+  padding: 0;
+  width: 25px !important;
+}
+.floating-toolbox-container.closed .floating-toolbox-header .title {
+  display: none;
+}
+.floating-toolbox-container.closed .floating-toolbox-header .cl-plan-toolbox-toggle {
+  width: 100%;
+  text-align: center;
+}
+.floating-toolbox-container.closed .floating-toolbox-accordion {
+  display: none;
+}
+.floating-toolbox-container .rg-right span {
+  display: none;
+}
+.floating-toolbox {
+  font-family: Verdana;
+  font-size: 13px;
+  color: #333333;
+  flex: 1;
+  min-width: 110px;
+  position: relative;
+}
+.floating-toolbox-header {
+  cursor: pointer;
+  border: 1px solid #808080;
+  border-bottom-width: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background: #3D3C3D;
+  color: #FFFFFF;
+  padding: 2px 10px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 12;
+  box-shadow: 5px 0px 6px -2px rgba(0, 0, 0, 0.3), 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.floating-toolbox-accordion {
+  z-index: 11;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  padding-top: 40px;
+  box-shadow: 5px 0px 6px -2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.floating-toolbox-accordion-content {
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.floating-toolbox-accordion-item .floating-toolbox-accordion-item-title i {
+  display: none;
+}
+.floating-toolbox-accordion-item.active .floating-toolbox-accordion-item-title {
+  color: #FFFFFF;
+  background: linear-gradient(to top, #74d7e2, #15c2d7);
+}
+.floating-toolbox-accordion-item.active .floating-toolbox-accordion-item-title i {
+  display: inline-block;
+  z-index: 10;
+  position: absolute;
+  top: 34px;
+  left: 10px;
+  color: #74d7e2;
+}
+.floating-toolbox-accordion-item.active .floating-toolbox-accordion-item-body {
+  display: block;
+}
+.floating-toolbox-accordion-item.active .floating-toolbox-accordion-item-body button {
+  margin: 10px 30px;
+}
+.floating-toolbox-accordion-item.active .hoverbg {
+  display: none;
+}
+.floating-toolbox-accordion-item-title {
+  padding: 10px;
+  cursor: pointer;
+  background: linear-gradient(to top, #f4f4f4, #dddedf);
+  position: relative;
+}
+.floating-toolbox-accordion-item-title .title-text {
+  z-index: 2;
+  position: relative;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.floating-toolbox-accordion-item-title .hoverbg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: #247b86;
+  opacity: 0;
+  z-index: 1;
+}
+.floating-toolbox-accordion-item-title:hover {
+  color: white;
+}
+.floating-toolbox-accordion-item-title:hover .hoverbg {
+  transition: all 0.25s ease;
+  opacity: 1;
+}
+.floating-toolbox-accordion-item-body {
+  display: none;
+  background-color: white;
+  height: 0px;
+  overflow: hidden;
+}
+.cl-diagram-palette {
+  height: 100%;
+}
+.fr-view [xmp-show] {
+  position: relative;
+}
+.fr-view [xmp-show]:before {
+  content: "\F06E";
+  position: absolute;
+  top: -8px;
+  right: 0px;
+  width: 32px;
+  font: normal normal normal 18px/1 FontAwesome;
+}
+.fr-view img[xmp-image-asset] {
+  min-width: 100px;
+  min-height: 100px;
+  display: inline-block;
+  background: #e7e7e7;
+  border: 1px solid #4baccf;
+  background: white url('../images/image.png') no-repeat center center;
+}
+.fr-view .ic {
+  position: relative;
+}
+.fr-view .ic::after {
+  content: attr(title);
+  font-size: 12px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  white-space: nowrap;
+  text-align: center;
+  z-index: 3;
+}
+.fr-view .drag-over {
+  border: 1px double aqua ;
+}

@@ -1,0 +1,120 @@
+#editor_container {
+  height: 600px;
+}
+.xmp-container {
+  width: 100%;
+  height: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+  /*  templates  */
+}
+.xmp-container .side {
+  resize: horizontal;
+  overflow-x: hidden;
+  width: 200px;
+  margin: 5px;
+  height: 100%;
+  font-family: "Arial";
+}
+.xmp-container .editor {
+  margin: 5px;
+}
+.xmp-container .parent {
+  display: flex;
+  flex-wrap: wrap;
+}
+.xmp-container .block {
+  margin: 5px;
+}
+.xmp-container .ador {
+  background-color: #fff;
+  cursor: pointer;
+  color: #444;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  position: relative;
+}
+.xmp-container .ador img {
+  position: absolute;
+  width: 230px;
+  height: 50px;
+  top: 0;
+  left: 0;
+}
+.xmp-container .ador i {
+  position: absolute;
+  left: 0;
+}
+.xmp-container .ador.active,
+.xmp-container .ador:hover {
+  background-color: #e8f2f5;
+}
+.xmp-container button.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+.xmp-container button.accordion:hover {
+  background-color: lightblue;
+}
+.xmp-container button.accordion.active {
+  background-color: lightblue;
+}
+.xmp-container button.accordion.active:after {
+  content: "\2212";
+}
+.xmp-container button.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.xmp-container .panel {
+  padding: 0 18px;
+  background-color: white;
+  overflow: hidden;
+  transition: height 0.2s ease-out;
+  height: 0;
+  display: flex;
+}
+.xmp-container .adors-panel {
+  display: block;
+}
+.xmp-container .active + .panel {
+  height: calc(100% - 80px);
+}
+.xmp-container .acctitle {
+  background-color: white;
+  color: #444;
+  padding: 18px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 15px;
+  border: 1px solid #e7e7e7;
+}
+.xmp-container .fr-view table.towcol,
+.xmp-container .fr-view table.treecol {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 10px 10px;
+}
+.xmp-container .fr-view table.towcol td,
+.xmp-container .fr-view table.treecol td {
+  border-width: 2px;
+  border-style: dotted;
+}

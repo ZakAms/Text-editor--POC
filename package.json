@@ -4,7 +4,8 @@
   "description": "Packing froala editor into container & injecting html elements and properties in code mode and view mode.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server",
+    "build": "webpack -e production"
   },
   "repository": {
     "type": "git",

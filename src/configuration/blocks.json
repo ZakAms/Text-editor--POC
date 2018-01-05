@@ -1,0 +1,12 @@
+{
+    "2col": {
+        "html": "<table class=\"towcol\"><tbody><tr><td rowspan=\"2\"><br></td><td ><br></td></tr><tr><td ><br></td></tr></tbody></table",
+        "menuClass": "template",
+        "iconImage": "images/bld-2.jpg"
+    },
+    "3col": {
+        "html": "<table class=\"treecol\" style='width: 100%;'><tbody><tr><td style='width: 33.3333%;'><br></td><td style='width: 33.3333%;'><br></td><td style='width: 33.3333%;'><br></td></tr></tbody></table>",
+        "menuClass": "template",
+        "iconImage": "images/bld-1.jpg"
+    }
+}

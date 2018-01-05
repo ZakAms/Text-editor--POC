@@ -1,0 +1,15 @@
+{
+    "text": {
+        "html": "<span>{{xmp.r['$ADORNAME$']}}</span>",
+        "adorIconImage": "fa fa-text-width"
+    },
+    "image": {
+        "html": "<span title=\"xmp.r['$ADORNAME$']\" class='ic'><img xmp-image-asset=\"xmp.r['$ADORNAME$']\" alt=\" \" style=\"height:100px;\" draggable=\"true\"/></span>",
+        "adorIconImage": "fa fa-image"
+    },
+    "show": {
+        "html": "{xmp.r['$ADORNAME$']}",
+        "adorIconImage": "fa fa-eye",
+        "propertyName": "xmp-show"
+    }
+}
